@@ -12,7 +12,7 @@ function preload(){
   imgsage = loadImage('orgimages/sage2020.png');
   imgwolf = loadImage('orgimages/wolf2020.png');
   imgwolfdead = loadImage('orgimages/wolfdead2020.png');
-  imgchip = loadImage('orgimages/chipmunk2020.png');
+  imgchip = loadImage('orgimages/Chipmunk2020.png');
   imgpine = loadImage('orgimages/pinetree2020.png');
 }
 
