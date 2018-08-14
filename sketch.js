@@ -4,7 +4,17 @@ let world;
 let stop = "false";
 //let pineOn="On",aspenOn="On",willowOn="On",sageOn="On",grassOn="On",forbesOn="On";
 let stopButt,wolfButt,coyoteButt,foxButt,elkButt,muleyButt,hareButt, beaverButt, mouseButt, chipButt;
+var imgbun, imgbundead, imgsage, imgwolf,wolfdead,imgchip, imgpine;
 
+function preload(){
+  imgbun = loadImage('orgimages/bunny2020.png');
+  imgbundead = loadImage('orgimages/bunnydead2020.png');
+  imgsage = loadImage('orgimages/sage2020.png');
+  imgwolf = loadImage('orgimages/wolf2020.png');
+  imgwolfdead = loadImage('orgimages/wolfdead2020.png');
+  imgchip = loadImage('orgimages/chipmunk2020.png');
+  imgpine = loadImage('orgimages/pinetree2020.png');
+}
 
 
 
