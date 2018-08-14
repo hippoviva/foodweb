@@ -54,24 +54,13 @@ class Hare extends Elk {
 }
   // Override the display method color red
   display() {
-    let orgcolor= color(255,228,225);
+    
     push();
-    rectMode(CENTER);
-    orgcolor.setAlpha(this.health);
-    fill(orgcolor);
-    noStroke();
-    //stroke(255, this.lifespan);
-    //strokeWeight(1);
-  //  push();
-    translate(this.pos.x, this.pos.y);
-
-    ellipse(0,0,16,16);
-    ellipse(-4,-10,5,15);
-    ellipse(4,-10,5,15);
-    fill(0,this.health);
-    ellipse(-4,-2,3,3);
-    ellipse(4,-2,3,3);
-    triangle(-3,0,0,3,3,0);
+    if (this.health>500){
+  image(imgbun,this.pos.x, this.pos.y);
+}else{
+ image(imgbundead,this.pos.x, this.pos.y);
+}
     pop();
   }
 
@@ -154,23 +143,7 @@ class Chipmunk extends Elk {
   // Override the display method - color hot pink
   display(){
     push();
-    let orgcolor2= color(15,15,15);
-    orgcolor2.setAlpha(this.health);
-    let orgcolor= color(205,133,63);
-    orgcolor.setAlpha(this.health);
-    fill(orgcolor);
-    translate(this.pos.x,this.pos.y);
-    noStroke();
-    ellipse(7,-5,10,6);
-    rotate(-PI/4);
-    ellipse(-2,0,20,10);
-    ellipse(7,-5,4,5);
-    stroke(orgcolor2);
-    ellipse(8,0,2,2);
-    bezier(4,-3,2,-3,-5,-5,-10,-1);
-    bezier(4,-1,2,-2,-5,-3,-10,1);
-    rotate(PI/6);
-    ellipse(-10,-2,3,12);
+   image(imgchip,this.pos.x, this.pos.y);
     pop();
 
 }
@@ -263,23 +236,14 @@ class Wolf extends Elk {
 
   // Override the display method - color hot pink
   display(){
-  let orgcolor= color(155,50,50);
+  
   push();
-  rectMode(CENTER);
-  orgcolor.setAlpha(this.health);
-  fill(orgcolor);
-  noStroke();
-  translate(this.pos.x,this.pos.y);
-  rotate(PI/4);
-  rect(0,0,16, 16);
-  fill(0,this.health);
-  ellipse(-4,0,3,3);
-  ellipse(0,-4,3,3);
-  ellipse(0,0,3,3);
-  triangle(-3,-8,0,-16,3,-8);
-  triangle(-8,-3,-16,0,-8,3);
-  triangle(0,5,0,0,5,0);
-
+  
+  if (this.health>200){
+  image(imgwolf,this.pos.x, this.pos.y);
+}else{
+ image(imgwolfdead,this.pos.x, this.pos.y);
+}
 
   pop();
 }
