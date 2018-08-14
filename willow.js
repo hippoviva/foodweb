@@ -54,25 +54,11 @@ class Pine extends Grass {
 
   // Override the display method  COLOR ORANGE
   display(){
-  let orgcolor= color(25,102,33);
+ 
   push();
-  rectMode(CENTER);
-  orgcolor.setAlpha(this.lifespan);
-  fill(orgcolor);
-  noStroke();
-  translate(this.pos.x, this.pos.y);
-
-  //var theta = map(this.pos.x, 0, width, 0, TWO_PI * 2);
-  //rotate(theta);
-
-  rotate(PI/4);
-  rect(-4,-4,6,6);
-  rect(0,0,8,8);
-  triangle(0,10,0,0,10,0)
-  fill(0,this.lifespan);
-  ellipse(6,6,3,3);
-
-  pop();
+    image(imgpine,this.pos.x,this.pos.y);
+    
+    pop();
 }
 }
 class Sagebrush extends Grass {
@@ -80,24 +66,7 @@ class Sagebrush extends Grass {
   // Override the display method COLOR yellow
   display(){
     push();
-    let orgcolor2= color(15,15,15);
-    orgcolor2.setAlpha(this.lifespan);
-    let orgcolor= color(50,205,50);
-    orgcolor.setAlpha(this.lifespan);
-    fill(orgcolor);
-    translate(this.pos.x,this.pos.y);
-    stroke(orgcolor2);
-    strokeWeight(2);
-    line(-0,-10,0,10);
-    strokeWeight(1);
-    rotate(-PI/1.3);
-    ellipse(0,8,4,12);
-    rotate(-PI/2);
-    ellipse(1,4,4,12);
-    rotate(PI/2);
-    ellipse(-5,2,4,12);
-    rotate(-PI/2);
-    ellipse(7,-1,4,12);
+    image(imgsage,this.pos.x,this.pos.y);
     pop();
 }
 }
