@@ -172,10 +172,12 @@ class Coyote extends Elk {
       //pine(1), aspen(2), willow(3), sage(4), grass(6), forbes(5)
 //Elk 1 , Muley2, hare3, beaver 4,mouse 5, chip 7, coyote 6, wolf 8
     animalPreference(i){
-      if(world.animals[i].animalType==3||world.animals[i].animalType==3||world.animals[i].animalType==4||world.animals[i].animalType==5){
-      this.health += 50;
+      if(world.animals[i].animalType==7||world.animals[i].animalType==3||world.animals[i].animalType==4||world.animals[i].animalType==5){
+     if(this.health <1000){
+        this.health += 50;
   //    console.log(this.constructor.name+" ate "+world.animals[i].constructor.name);
     world.animals[i].health-=500;
+     }
   }
     }
 
