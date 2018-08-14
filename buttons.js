@@ -1,6 +1,6 @@
 function wolfAddToggle(){
    let place3 = createVector(random(width),random(height));
-           world.animals.push(new Wolf(place3,7));
+           world.animals.push(new Wolf(place3,8));
 }
 
 
