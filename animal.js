@@ -4,7 +4,7 @@
 class Elk {
   constructor(l,animalType) {
     this.pos = l.copy(); // Location
-    this.health = 200; // Life timer
+    this.health = 300; // Life timer
     this.xoff = random(1000); // For perlin noise
     this.yoff = random(1000);
     this.maxspeed = 2;
